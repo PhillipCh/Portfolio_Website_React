@@ -1,0 +1,23 @@
+.contactBody{
+    margin: 30px;
+}
+
+.contactBody a:link{
+    color:white;
+    text-decoration: none;
+}
+
+.contactBody a:visited{
+    color:white;
+    text-decoration: none;
+}
+
+.contactBody a:hover{
+    color:grey;
+    text-decoration: none;
+}
+
+.contactBody a:active{
+    color:white;
+    text-decoration: none;
+}
