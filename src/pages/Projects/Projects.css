@@ -1,3 +1,10 @@
+.container {
+    margin-left: 5em;
+    margin-right: 5em;
+/*     display: flex;
+    flex-wrap: wrap; */
+}
+
 .link{
 
     color: #61dafb;
@@ -9,5 +16,22 @@
     color: white;
 }
 
+.title {
+    color: white;
+}
+
+.cards {
+    /* display: flex; */
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+}
 
 
+
+.card1 {
+    min-height: 250px;
+    border: 1px white solid;
+    padding-inline: 1rem;
+    width: 40%;
+}

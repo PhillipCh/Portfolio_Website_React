@@ -290,8 +290,8 @@ render() {
     }
 
     return (
-        <fragment>
-            <div className = "container">
+        // <fragment>
+            <div className = "textAdventurecontainer">
                 <div className ="game">
                     <p>
                         {showRoom(this.state.currentScene)}
@@ -312,7 +312,7 @@ render() {
 
 
 
-        </fragment>
+        // </fragment>
 
     
     );

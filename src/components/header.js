@@ -10,41 +10,39 @@ import {
   Link
 } from "react-router-dom";
 
-class Header extends React.Component{
+class Header extends React.Component {
   render() {
     return (
-      <fragment>
-    <Router>
- 
-      <div className="nav-bar">
+        <Router>
 
-              <Link to="/About">About Me</Link>
-              <Link to="/Projects">Projects</Link>
-              <Link to="/Contact">Contact</Link>
+          <div className="nav-bar">
 
+            <Link to="/About">About Me</Link>
+            <Link to="/Projects">Projects</Link>
+            <Link to="/Contact">Contact</Link>
 
 
-        {/* A <Switch> looks through its children <Route>s and
+
+            {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-      </div>
+          </div>
 
-      <Switch>
-          <Route path="/Projects">
-            <Projects />
-          </Route>
-          <Route path="/Contact">
-            <Contact />
-          </Route>
-          <Route path="/Projects/TextAdventure">
-            <TextAdventure />
-          </Route>
-          <Route path="/">
-            <About />
-          </Route>
-        </Switch>
+          <Switch>
+            <Route path="/Projects" exact strict>
+              <Projects />
+            </Route>
+            <Route path="/Contact" exact strict>
+              <Contact />
+            </Route>
+{/*             <Route path="/Projects/TextAdventure" exact strict>
+              <TextAdventure />
+            </Route> */}
+            <Route path="/">
+              <About />
+            </Route>
+          </Switch>
 
-    </Router>
-    </fragment>
+        </Router>
     );
   }
 
